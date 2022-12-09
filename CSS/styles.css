@@ -519,18 +519,14 @@ body {
 
 .portfolio-project-list figure {
     font-size: 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-project-list figure:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
-}
-
-.portfolio-project {
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-project-list div {
@@ -540,16 +536,21 @@ body {
 
 .portfolio-project-list div > p {
     position: absolute;
-    font-size: 18px;
-    line-height: 1.555;
-    letter-spacing: 0.03em;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-color: rgba(33, 150, 243, 0.9);
-    color: var(--background-third-color);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding: 49px 45px 49px 24px;
     transform: translateY(294px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-projects-list figure:hover div > p {
+.portfolio-project-list figure:hover div > p {
     transform: translateY(0);
 }
 
